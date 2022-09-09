@@ -13,6 +13,7 @@ int main(void)
 	long li;
 	long long lli;
 	float f;
+	
 	printf("Size of a char: 1 byte(s)\n", sizeof(c));
 	printf("Size of a int: 4 byte(s)\n", sizeof(i));
 	printf("Size of a a long int: 8 byte(s)\n", sizeof(li));
