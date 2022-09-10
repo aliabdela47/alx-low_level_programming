@@ -1,17 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main - prints if the number is positive, zero or negative
- *
- * Description: using the main function
- * this program prints Programming is positive, zero or negative
- * Return: 0 on Success, error otherwise
- *
+/** main - entry point
+ *Description: prints Programming is positive, zero
+ *Return: 0
  */
 int main(void)
-/* Main - program entry point
- *  main - prints if the number is positive, zero or negative
- */
 {
 int n;
 srand(time(0));
