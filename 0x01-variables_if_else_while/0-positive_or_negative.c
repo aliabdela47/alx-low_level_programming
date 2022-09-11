@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** main - entry point
+/* main - entry point
  *Description: prints Programming is positive, zero
  *Return: 0
  */
