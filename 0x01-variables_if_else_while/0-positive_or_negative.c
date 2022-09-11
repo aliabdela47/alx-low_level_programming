@@ -4,9 +4,9 @@
 
 /** main - entry point
 *Description: prints Programming is positive, zero
-*this program prints "Programming is positive, zero, or negative"
-* Return: 0
-*/
+*this program prints Programming is positive, zero, or negative
+*Return: 0
+**/
 int main(void)
 {
 int n;
