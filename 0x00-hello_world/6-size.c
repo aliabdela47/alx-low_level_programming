@@ -19,6 +19,5 @@ int main(void)
 	printf("Size of a a long int: 8 byte(s)\n", sizeof(li));
 	printf("Size of a long long int: 8 byte(s)\n", sizeof(lli));
 	printf("Size of a float: 4 byte(s)\n", sizeof(f));
-	return (0)
-	%s/\s\+$//e;
+	return (0);
 }
