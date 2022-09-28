@@ -1,24 +1,46 @@
-/*
-* File: 100-is_palindrome.c
-* Auth: Ali
-*/
 #include "main.h"
-int find_strlen(char *s);
-int check_palindrome(char *s, int len, int index);
-int is_palindrome(char *s);
 /**
-* find_strlen - Returns the length of a string.
-* @s: The string to be measured.
-*
-* Return: The length of the string.
+* vericication_1 - tamaño de str_v1.
+* @str_v1: String
+* @v1: counter
+* Return: counter - 1
 */
-int find_strlen(char *s)
+int vericication_1(char *str_v1, int v1)
 {
-int len = 0;
-if (*(s + len))
+if (*str_v1 == 0)
 {
-len++;
-len += find_strlen(s + len);
+return (v1 - 1);
 }
-return (len);
+return (vericication_1(str_v1 + 1, v1 + 1));
+}
+/**
+* verification2 - tamaño de str_v2
+* @str_v2: String
+* @v2: counter
+* Return: returns 1 if a string is a palindrome and 0 if not.
+*/
+int verification2(char *str_v2, int v2)
+{
+if (*str_v2 != *(str_v2 + v2))
+{return (0);
+}
+else if (*str_v2 == 0)
+{
+return (1);
+}
+else
+{
+return (verification2(str_v2 + 1, v2 - 2));
+}
+}
+/**
+* is_palindrome - seacrh if a string is a palindrome
+* @s: String.
+* Return: returns 1 if a string is a palindrome and 0 if not.
+*/
+int is_palindrome(char *s)
+{
+int i;
+i = vericication_1(s, 0);
+return (verification2(s, i));
 }
