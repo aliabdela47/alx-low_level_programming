@@ -1,16 +1,17 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
-* main - first argument
-* @argc: unused
-* @argv: string
-* Return: string
+* main - prints all the arguments a program reading.
+* @argc: numbee of arguments.
+* @argv: array of arguments.
+* Return: Always (0) Success.
 */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-int i;
-for (i = 0; i < argc; i++)
+int n;
+for (n = 0; n < argc; n++)
 {
-printf("%s\n", argv[i]);
+printf("%s\n", argv[n]);
 }
 return (0);
 }
